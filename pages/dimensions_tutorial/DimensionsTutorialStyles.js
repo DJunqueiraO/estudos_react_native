@@ -10,7 +10,7 @@ export const dimensions_tutorial_styles = StyleSheet.create(
     view: {
       backgroundColor: 'dodgerblue',
       width: '50vw',
-      height: '50vw'
+      height: '100%'
     }
   }
 )

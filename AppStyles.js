@@ -13,13 +13,13 @@ export const styles = StyleSheet.create(
       width: '100%',
       backgroundColor: 'red'
     },
-    navigation_bar_button: {
+    navigation_bar_text: {
       backgroundColor: 'green',
       padding: 5,
       color: 'white',
       fontFamily: 'monospace'
     },
-    page_div: {
+    page_view: {
       flexGrow: 1
     }
   }

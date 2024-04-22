@@ -1,7 +1,7 @@
 import { 
-  Button,
   SafeAreaView,
   ScrollView,
+  Text,
   TouchableOpacity,
   View
 } from 'react-native';
@@ -11,8 +11,9 @@ import {
   Touchables,
   PlatformSpecific,
   DimensionsTutorial,
-  OrientationChanges
- } from './pages/Pages';
+  OrientationChanges,
+  FlexBox
+} from './pages/Pages';
 import { SessionStorage, useStateAsObject } from './utils/Utils';
 
 export default function App() {
@@ -22,7 +23,8 @@ export default function App() {
     <Buttons/>,
     <PlatformSpecific/>,
     <DimensionsTutorial/>,
-    <OrientationChanges/>
+    <OrientationChanges/>,
+    <FlexBox/>
   ]
 
   const page_index_session_storage = new SessionStorage('page_index')
@@ -43,24 +45,26 @@ export default function App() {
         {
           pages.map(
             ($0, index) => (
-              <TouchableOpacity>
-                <View 
-                  style={styles.navigation_bar_button}
-                  children={$0.type.name}
+              <TouchableOpacity
+                key={$0.type.name}>
+                <Text 
+                  style={styles.navigation_bar_text}
                   color={'green'}
                   onClick={
                     () => {
                       page_index_session_storage.set(index)
                       selected_page_index.set(index)
                     }
-                  }/>
+                  }>
+                  {$0.type.name}
+                </Text>
               </TouchableOpacity>
             )
           )
         }
       </ScrollView>
       <View
-        style={styles.page_div}>
+        style={styles.page_view}>
         {pages[selected_page_index.get(0)]}
       </View>
     </SafeAreaView>

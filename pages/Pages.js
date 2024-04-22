@@ -1,3 +1,5 @@
+export { FlexBox } from './flex_box/FlexBox'
+
 export { OrientationChanges } from './orientation_changes/OrientationChanges'
 
 export { DimensionsTutorial } from './dimensions_tutorial/DimensionsTutorial'
