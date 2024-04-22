@@ -14,7 +14,7 @@ export function Buttons(
   return (
     <SafeAreaView style={buttons_styles.safe_area_view}>
       <Button 
-        color={'orange'}
+        color={'silver'}
         // onPress={() => console.log('lero lero')}
         // onPress={() => alert('lero lero')}
         // onPress={

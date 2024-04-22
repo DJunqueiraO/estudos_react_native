@@ -1,8 +1,8 @@
 import { 
+  Pressable,
   SafeAreaView,
   ScrollView,
   Text,
-  TouchableOpacity,
   View
 } from 'react-native';
 import { styles } from './AppStyles';
@@ -45,7 +45,7 @@ export default function App() {
         {
           pages.map(
             ($0, index) => (
-              <TouchableOpacity
+              <Pressable
                 key={$0.type.name}>
                 <Text 
                   style={styles.navigation_bar_text}
@@ -58,7 +58,7 @@ export default function App() {
                   }>
                   {$0.type.name}
                 </Text>
-              </TouchableOpacity>
+              </Pressable>
             )
           )
         }
