@@ -14,10 +14,11 @@ export const styles = StyleSheet.create(
       backgroundColor: 'red'
     },
     navigation_bar_text: {
-      backgroundColor: 'green',
-      padding: 5,
+      backgroundColor: '#222',
+      padding: 10,
       color: 'white',
-      fontFamily: 'monospace'
+      fontFamily: 'Segoe UI',
+      fontWeight: 'bold'
     },
     page_view: {
       flexGrow: 1

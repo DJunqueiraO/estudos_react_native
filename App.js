@@ -12,19 +12,31 @@ import {
   PlatformSpecific,
   DimensionsTutorial,
   OrientationChanges,
-  FlexBox
+  FlexBox,
+  Alighnment,
+  Wrap,
+  FlexGrow,
+  Positioning,
+  WelcomePage,
+  ImageViewPage
 } from './pages/Pages';
 import { SessionStorage, useStateAsObject } from './utils/Utils';
 
 export default function App() {
 
   const pages = [
+    <ImageViewPage/>,
+    <WelcomePage/>,
     <Touchables/>,
     <Buttons/>,
     <PlatformSpecific/>,
     <DimensionsTutorial/>,
     <OrientationChanges/>,
-    <FlexBox/>
+    <FlexBox/>,
+    <Alighnment/>,
+    <Wrap/>,
+    <FlexGrow/>,
+    <Positioning/>
   ]
 
   const page_index_session_storage = new SessionStorage('page_index')
