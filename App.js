@@ -18,6 +18,7 @@ import {
   FlexGrow,
   Positioning,
   WelcomePage,
+  Navigation,
   ImageViewPage
 } from './pages/Pages';
 import { SessionStorage, useStateAsObject } from './utils/Utils';
@@ -25,6 +26,7 @@ import { SessionStorage, useStateAsObject } from './utils/Utils';
 export default function App() {
 
   const pages = [
+    <Navigation/>,
     <ImageViewPage/>,
     <WelcomePage/>,
     <Touchables/>,
@@ -35,8 +37,8 @@ export default function App() {
     <FlexBox/>,
     <Alighnment/>,
     <Wrap/>,
-    <FlexGrow/>,
-    <Positioning/>
+    <Positioning/>,
+    <FlexGrow/>
   ]
 
   const page_index_session_storage = new SessionStorage('page_index')

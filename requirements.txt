@@ -1,2 +1,4 @@
 @react-native-async-storage/async-storage
 @react-native-community/hooks
+@react-navigation/native
+@react-navigation/native-stack

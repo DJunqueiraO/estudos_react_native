@@ -1,8 +1,10 @@
+export { Navigation } from './navigation/Navigation'
+
 export { ImageViewPage } from './image_view_page/ImageViewPage'
 
 export { WelcomePage } from './welcome_page/WelcomePage'
 
-export { Positioning } from './positioning/positioning'
+export { Positioning } from './positioning/Positioning'
 
 export { FlexGrow } from './flex_grow/FlexGrow'
 
